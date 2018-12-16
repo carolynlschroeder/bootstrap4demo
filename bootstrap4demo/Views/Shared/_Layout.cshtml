@@ -54,9 +54,10 @@
                             Examples
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" asp-area="" asp-controller="Grid" asp-action="Index" class="nav-link">Grids</a>
-                            <a class="dropdown-item" asp-area="" asp-controller="Flex" asp-action="Index" class="nav-link">Flex</a>
-                            <a class="dropdown-item" asp-area="" asp-controller="Forms" asp-action="Index" class="nav-link">Forms</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Grid" asp-action="Index">Grids</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Flex" asp-action="Index">Flex</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="StackedForm" asp-action="Index">Stacked Form</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="InlineForm" asp-action="Index">Inline Form</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -95,7 +96,9 @@
         <script src="~/vendor.min.js"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
